@@ -23,7 +23,7 @@ function renderTasks() {
     checkIcon.classList.add("fa", "fa-check-circle-o", "icon");
 
     if (task.completed) {
-      checkIcon.classList.add("rotate-left");
+      checkIcon.classList.add("fa-rotate-left");
     }
 
     checkIcon.addEventListener("click", () => {
@@ -31,10 +31,10 @@ function renderTasks() {
 
       if (task.completed) {
         newDiv.classList.add("completed");
-        checkIcon.classList.add("rotate-left");
+        checkIcon.classList.add("fa-rotate-left");
       } else {
         newDiv.classList.remove("completed");
-        checkIcon.classList.remove("rotate-left");
+        checkIcon.classList.remove("fa-rotate-left");
       }
       localStorage.setItem("data", JSON.stringify(data));
     });
