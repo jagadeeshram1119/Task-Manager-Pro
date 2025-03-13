@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="container">
+       <h1>Dashboard</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">  
+                    <i class="fa fa-list"></i>
+                    <h1>Task Manager Pro</h1>
+                    <i class='fa fa-pen'></i>
+                    <input class="inputs" placeholder="✎ Enter the Task" type="text">
+                    
+
+                    <button type="submit" id="add-btn"><i class="fa fa-plus" ></i>Add Task</button>
+                    <div class="buttons">
+                        <button type="submit" id="All-btn"> <i class="fa fa-list-alt"></i>All</button>
+                        <button type="submit" id="Completed-btn"> <i class="fa fa-check"> </i>Completed</button>
+                        <button type="submit" id="Pending-btn"> <i class="fa fa-clock-o"></i>Pending</button>
+                    </div>
+        </div>
+        <div class="Alllist"> </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
